@@ -1,21 +1,24 @@
 body {
   margin: 0;
+  line-height: 1.5;
 }
 #nav-logo {
   float: left;
   height: fit-content;
   width: 13%;
   padding-top: 16px;
+  padding-left: 9%;
+  padding-right: 3%;
 }
 .navbar {
   background-color: rgb(154, 84, 63);
   display: flex;
-  justify-content: space-evenly;
+  gap: 9%;
 }
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -25,24 +28,26 @@ body {
 .dropdown {
   float: left;
   display: inline;
+  font-weight: bold;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 15px;
   border: none;
   outline: none;
   color: white;
   padding: 32px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-weight: bold;
+  color: rgb(254, 228, 186);
 }
 .dropdown .dropbtnimg {
   border: none;
   outline: none;
   color: white;
-  padding: 13% 0% 10% 0%;
+  padding: 22% 0% 10% 0%;
   background-color: inherit;
-  font-family: inherit;
+  width: 80%;
 }
 .navbar a:hover,
 .dropdown:hover .dropbtn {
@@ -65,7 +70,7 @@ body {
 .dropdown-content a {
   float: none;
   color: rgb(226, 222, 222);
-  padding: 12px 16px;
+  padding: 12px 80px 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -97,12 +102,12 @@ body {
   border: 2px solid rgb(255, 123, 0);
   margin: auto;
 }
-#fst-img {
+#jumbotron {
   width: 83%;
   margin-left: 9%;
 }
 #description {
-  padding: 5% 19%;
+  padding: 5% 24% 5% 18%;
   color: rgb(182, 83, 11);
   font-size: 151%;
 }
@@ -119,15 +124,15 @@ body {
   color: rgb(22, 31, 47);
 }
 #vision-text {
-  padding: 1% 24%;
+  padding: 0% 24%;
   text-align: center;
-  font-size: 111%;
-  color: rgb(68, 69, 108);
+  font-size: 112%;
+  color: rgb(79 80 90);
 }
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin: 7% 7% 2% 7%;
+  margin: 7% 9% 2% 8%;
   width: 84%;
 }
 
@@ -138,20 +143,24 @@ body {
   font-weight: bold;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 2% 5%;
-  color: rgb(68, 69, 108);
+  padding: 6% 5%;
+  font-size: 112%;
+  color: rgb(115 116 145);
 }
 #explore-auroville {
   border-radius: 50%;
-  width: 57%;
+  width: 64%;
+  height: 14em;
 }
 #partner-with-auroville {
   border-radius: 50%;
-  width: 69%;
+  width: 59%;
+  height: 14em;
 }
 #support-auroville {
   border-radius: 50%;
-  width: 57%;
+  width: 69%;
+  height: 14em;
 }
 #overview {
   text-align: center;
@@ -162,27 +171,36 @@ body {
 }
 #overview-content {
   text-align: center;
-  margin: 1% 23% 10% 23%;
+  margin: 1% 20% 7% 20%;
   background-color: rgb(255, 247, 237);
-  padding: 1% 3% 1% 3%;
+  padding: 2% 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flex {
   display: flex;
   flex-direction: row;
   text-align: center;
-  gap: 8% 13%;
+}
+.flex1 {
+  padding-bottom: 9px;
+  gap: 8% 8%;
+}
+.flex2 {
+  gap: 8% 8%;
 }
 #overview-content div {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  font-size: 180%;
+  font-size: 172%;
   color: rgb(245, 158, 12);
+  width: 100%;
 }
 #overview-content p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(107, 115, 129);
+  margin-top: -13px;
 }
 #seven {
   text-align: center;
@@ -200,11 +218,18 @@ body {
   text-decoration: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: rgb(159, 185, 219);
+  color: rgb(155 162 173 / 85%);
   font-weight: bold;
 }
 .grid-2 h4 {
   color: rgb(22, 30, 53);
+  margin: 3px;
+  font-size: 107%;
+}
+.container-2 p {
+  margin-top: 0px;
+  font-size: 110%;
+  font-weight: 500;
 }
 .grid-2 img {
   border-radius: 10px;
@@ -220,6 +245,11 @@ body {
   padding-left: 3%;
   padding-bottom: 3%;
   line-height: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#footer h4 {
+  font-size: 15px;
 }
 #footer a {
   color: rgb(160, 153, 153);
@@ -229,6 +259,15 @@ body {
 #footer a:hover {
   color: rgb(255, 255, 255);
   cursor: pointer;
+}
+#b {
+  padding-left: 10%;
+}
+#c {
+  padding-left: 10%;
+}
+#d {
+  padding-left: 4%;
 }
 #bottom_line {
   border-bottom: 1px solid rgba(51, 26, 26, 0.25);
